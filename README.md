@@ -10,3 +10,4 @@
 Resonansi7/Resonansi7 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+https://www.notion.so/Emergent-Blueprint-Resonansi-Metakognisi-dan-Arsitektur-Non-Linear-22d357f5f14780c682b0e1167eaf2633?source=copy_link
