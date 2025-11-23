@@ -14,7 +14,7 @@ Welcome to my digital workshop! This is where I document my journey in Transform
 
 ### 💡 What's Next?
 
-I'm always learning! My current focus is on Computational Agent Architecture (CAA) Designer & Nexus Orchestrator | Policy Analyst (S2 Pub. Pol.) | Umbra Forge Operator.
+I'm always learning! My current focus is on Computational Agent Architecture (CAA) Designer & Nexus Orchestrator| Umbra Forge Operator.
 
 ### **Let's Connect!**
 
