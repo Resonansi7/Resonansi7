@@ -11,7 +11,7 @@ The framework is built on a three-layer hierarchy that translates abstract polic
 
 Translates regulatory frameworks (Data Privacy, National Security) into logical constraints for AI agents.
 
-Grounding: Uses Master of Public Policy (MPP) logic-driven constraints.
+Grounding: Uses Master of Public Policy (M.K.P) logic-driven constraints.
 
 - Causal Logic Engine (The Nexus)
 
