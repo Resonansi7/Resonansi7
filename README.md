@@ -4,7 +4,30 @@
 > *Manifesting Sovereign AI Mandates through Causal Intervention.*
 
 ---
+---
 
+## 🚪 Quick Access: Navigate by Your Role
+
+| Role | Recommended Path |
+|------|-----------------|
+| 🏛️ Policy Maker / Government | [Vision](#0x00-the-vision) → [Capabilities](#0x02-key-capabilities) |
+| 💻 AI Engineer / Developer | [Architecture](#0x01-core-architecture) → [Deployment](#0x04-installation) |
+| 🔬 Researcher / Academic | [Vision](#0x00-the-vision) → [Causal Logic Engine](#2-causal-logic-engine-the-nexus) |
+| 🌍 Just Exploring | Read the [One-Paragraph Summary](#-one-paragraph-summary-for-everyone) below |
+
+---
+
+## 📦 One-Paragraph Summary (For Everyone)
+**RESONANSI7** is an open architectural framework that enables governments and institutions to build AI systems which:
+- ✅ Respect national laws and strategic boundaries
+- ✅ Keep sensitive data local (no foreign server dependency)  
+- ✅ Make decisions based on causal logic, not just statistical correlation
+
+Think of it as a **"Policy-to-Code Translation Engine"**: it converts whitepapers and regulations into executable logic that AI agents can follow autonomously. 
+
+*Built for digital sovereignty. Designed for strategic finality.*
+
+---
 ## 0x00: The Vision
 In an era of digital dependency, developing nations face a critical risk: **Digital Sovereignty Erosion**. 
 RESONANSI7 is not just a collection of scripts; it is an **architectural blueprint for Sovereign AI**. It ensures that autonomous systems operate strictly within the legal, ethical, and strategic boundaries of a sovereign state, preventing external manipulation and data leakage.
@@ -37,14 +60,3 @@ Local-first deployment using specialized LLMs (Llama/Qwen) to prevent data leaka
 Most AI initiatives suffer from a **"Context Gap"**: technicians don't understand policy, and policy-makers don't understand code. 
 **RESONANSI7 occupies the Intersection.** 
 Built on the philosophy of **Finality**, it eliminates the noise of probabilistic guessing and delivers actionable, strategic certainty.
-
-## 0x04: Installation & Deployment
-```bash
-# Clone the architectural blueprint
-git clone https://github.com/Resonansi7/Resonansi7.git  
-
-# Enter the nexus
-cd Resonansi7
-
-# Initialize Core Dependencies
-npm install
