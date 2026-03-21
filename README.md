@@ -34,7 +34,7 @@ Sovereign Data Governance: Frameworks for localizing intelligence without sacrif
 
 - Policy-as-Code (PaC): Converting whitepapers and mandates into functional, automated system guards.
 
-0x03: Why RESONANSI7?
+0x03: Why Resonansi7?
 Most AI initiatives suffer from a "context gap": technicians don't understand policy, and policy-makers don't understand the code. RESONANSI7 occupies the Intersection. It is built on the philosophy of Finality—where every algorithmic action is a deliberate step toward a strategic objective.
 
 0x04: Installation & Deployment
@@ -43,7 +43,7 @@ Bash
 git clone https://github.com/Resonansi7/Resonansi7.git
 
 # Enter the nexus
-cd RESONANSI7
+cd Resonansi7
 
 # Initialize Core Dependencies
 npm install
