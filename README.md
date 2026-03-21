@@ -14,7 +14,7 @@ The framework operates on a three-layer hierarchy that translates abstract polic
 
 ### 1. Policy Interpretation Layer (PIL)
 Translates complex regulatory frameworks (Data Privacy, National Security, Trade Laws) into logical constraints for AI agents.
-*   **Grounding:** Built on Master of Public Policy (MPP) logic-driven constraints.
+*   **Grounding:** Built on Master of Public Policy (M.K.P) logic-driven constraints.
 *   **Function:** Converts whitepapers into automated system guards (Policy-as-Code).
 
 ### 2. Causal Logic Engine (The Nexus)
