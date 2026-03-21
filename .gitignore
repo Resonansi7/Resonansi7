@@ -1,0 +1,11 @@
+MODELS/ 
+node_modules/ 
+.devops/ 
+*.log 
+.env 
+Docker/ 
+TRAINING/ 
+VAULT/ 
+*.env 
+*.json 
+*.txt 
