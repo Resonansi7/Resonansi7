@@ -40,7 +40,7 @@ Most AI initiatives suffer from a "context gap": technicians don't understand po
 0x04: Installation & Deployment
 Bash
 # Clone the architectural blueprint
-git clone https://github.com/Resonansi7/RESONANSI7.git
+git clone https://github.com/Resonansi7/Resonansi7.git
 
 # Enter the nexus
 cd RESONANSI7
