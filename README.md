@@ -61,4 +61,17 @@ Most AI initiatives suffer from a **"Context Gap"**: technicians don't understan
 **RESONANSI7 occupies the Intersection.** 
 Built on the philosophy of **Finality**, it eliminates the noise of probabilistic guessing and delivers actionable, strategic certainty.
 
-See a working PoC of Policy-as-Code: Sistem-Tata-Kelola-Digital-Bandung-Raya (https://github.com/Resonansi7/Sistem-Tata-Kelola-Digital-Bandung-Raya)
+See some example working PoC of Policy-as-Code:
+
+## 🔗 Related Projects & Proofs-of-Concept
+
+This ecosystem includes specialized implementations:
+
+| Project | Domain | Status |
+|---------|--------|--------|
+| [Sistem-Tata-Kelola-Digital-Bandung-Raya](https://github.com/Resonansi7/Sistem-Tata-Kelola-Digital-Bandung-Raya)) | Policy-as-Code (Smart City) | ✅ PoC Functional |
+| [knowledge-management-for-public-sector](https://github.com/Resonansi7/knowledge-management-for-public-sector) | Public Sector KM | 📋 Templates & Workflows |
+| [energy-policy-analysis](https://github.com/Resonansi7/energy-policy-analysis) | Energy Policy Modeling | 🔍 In Development |
+| *More repositories under active development* | | |
+
+*Note: Documentation quality varies. These are working artefacts, not marketing showcases. For strategic inquiries, contact directly.*
