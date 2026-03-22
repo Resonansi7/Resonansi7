@@ -50,6 +50,12 @@ Local-first deployment using specialized LLMs (Llama/Qwen) to prevent data leaka
 *   **Orchestration:** High-efficiency Node.js/Python hybrid for real-time OSINT and data bridge management.
 *   **Security:** Air-gapped ready architecture for sensitive sovereign operations.
 
+*   ### 📂 Repository Artifacts (Reference Implementation)
+* **Policy logic:** See [`core/causal_logic.js`](./core/causal_logic.js) for the PIL implementation.
+* **OSINT Adapters:** See [`adapters/`](./adapters/) for Gmaps & Geopolitical monitoring modules.
+* **Orchestration:** The [`main.js`](./main.js) acts as the Proactive Orchestration Core (POC).
+* **Real-World Audit:** Read the latest [Maritime Audit Report](./docs/audit_report_01.md).
+
 ## 0x02: Key Capabilities
 *   **Sovereign Data Governance:** Frameworks for localizing intelligence without sacrificing agentic capabilities.
 *   **Predictive Infrastructure Logistics:** Utilizing causal modeling to anticipate supply chain disruptions and digital infrastructure failures before they occur.
