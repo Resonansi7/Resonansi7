@@ -14,4 +14,4 @@ The `core/causal_logic.js` implementation is a direct manifestation of **Policy-
 3. **Module LAN (Liquidity Arbitration Nexus):** Conceptual (Connecting financial policy to automated triggers).
 
 ---
-*Authored by Adiguna Sopyan, MPP | Sovereign AI Architect*
+*Authored by Adiguna Sopyan, M.K.P | Sovereign AI Architect*
