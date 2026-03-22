@@ -60,3 +60,5 @@ Local-first deployment using specialized LLMs (Llama/Qwen) to prevent data leaka
 Most AI initiatives suffer from a **"Context Gap"**: technicians don't understand policy, and policy-makers don't understand code. 
 **RESONANSI7 occupies the Intersection.** 
 Built on the philosophy of **Finality**, it eliminates the noise of probabilistic guessing and delivers actionable, strategic certainty.
+
+See a working PoC of Policy-as-Code: Sistem-Tata-Kelola-Digital-Bandung-Raya (https://github.com/Resonansi7/Sistem-Tata-Kelola-Digital-Bandung-Raya)
