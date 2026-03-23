@@ -1,37 +1,28 @@
-/**
- * Resonansi7 - News OSINT Adapter
- * Purpose: Automated scanning of regulatory news & geopolitical signals.
- * Architect: Adiguna Sopyan, MPP
- */
+const rssFetcher = require('./rss_fetcher');
 
 class NewsOSINT {
     constructor() {
-        this.monitoredKeywords = ['regulasi', 'kedaulatan data', 'logistik', 'tarif'];
+        this.monitoredKeywords = ['data', 'regulasi', 'tarif', 'ekonomi', 'kebijakan', 'pelabuhan'];
     }
 
-    /**
-     * Simulasi fetch data dari sumber berita eksternal.
-     */
     async scanGlobalNews() {
-        console.log(`[NEWS_OSINT] Scanning for keywords: ${this.monitoredKeywords.join(', ')}...`);
+        console.log(`[NEWS_OSINT] Scanning live feeds for keywords: ${this.monitoredKeywords.join(', ')}...`);
         
-        // Simulasi data yang ditemukan
-        const results = [
-            {
-                title: "Pemerintah Perketat Aturan Data E-commerce Nasional",
-                source: "Digital_Economy_Daily",
-                impactScore: 8.5,
-                relevance: "HIGH"
-            },
-            {
-                title: "Perubahan Tarif Logistik Selat Malaka",
-                source: "Maritime_Report",
-                impactScore: 7.2,
-                relevance: "MEDIUM"
-            }
-        ];
+        const rawNews = await rssFetcher.fetchStrategicNews();
+        
+        // Filter berita berdasarkan kata kunci relevan
+        const filteredNews = rawNews.filter(article => 
+            this.monitoredKeywords.some(keyword => 
+                article.title.toLowerCase().includes(keyword.toLowerCase())
+            )
+        ).map(article => ({
+            title: article.title,
+            source: article.source,
+            impactScore: Math.floor(Math.random() * 4) + 6, // Simulasi scoring sementara
+            relevance: "HIGH"
+        }));
 
-        return results;
+        return filteredNews.slice(0, 5); // Ambil 5 teratas
     }
 }
 
