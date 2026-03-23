@@ -67,6 +67,18 @@ Most AI initiatives suffer from a **"Context Gap"**: technicians don't understan
 **RESONANSI7 occupies the Intersection.** 
 Built on the philosophy of **Finality**, it eliminates the noise of probabilistic guessing and delivers actionable, strategic certainty.
 
+---
+
+## 0x04: Quick Start (The Sovereign Cycle)
+
+To run the full proactive orchestration (News Scan -> Policy Audit -> WA Alert):
+
+1. **Clone & Setup:**
+   ```bash
+   git clone [https://github.com/Resonansi7/Resonansi7.git](https://github.com/Resonansi7/Resonansi7.git)
+   cd Resonansi7
+   npm install
+
 See some example working PoC of Policy-as-Code:
 
 ## 🔗 Related Projects & Proofs-of-Concept
