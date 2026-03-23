@@ -9,3 +9,9 @@ VAULT/
 *.env 
 *.json 
 *.txt 
+# Tools & External Binaries
+SEED/
+*.zip
+*.exe
+*.msi
+nmap/

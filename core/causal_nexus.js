@@ -1,11 +1,5 @@
 /**
  * Resonansi7 - Causal Nexus Core
- * Purpose: Connecting isolated events to detect systemic risks.
- * Architect: Adiguna Sopyan, MPP
- */
-
-/**
- * Resonansi7 - Causal Nexus Core
  * Purpose: Connecting isolated events with persistent memory.
  * Architect: Adiguna Sopyan, MPP
  */
@@ -54,9 +48,6 @@ class CausalNexus {
         return amplification;
     }
 }
-
-const causalNexus = new CausalNexus();
-module.exports = causalNexus;
 
 const causalNexus = new CausalNexus();
 module.exports = causalNexus;
