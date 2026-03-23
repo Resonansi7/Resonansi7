@@ -100,11 +100,11 @@ graph TD
     style E fill:#f96,stroke:#333,stroke-width:2px
     style G fill:#bbf,stroke:#333,stroke-width:2px
     style I fill:#dfd,stroke:#333,stroke-width:2px
+```
 
 See some example working PoC of Policy-as-Code:
 
 ## 🔗 Related Projects & Proofs-of-Concept
-
 This ecosystem includes specialized implementations:
 
 | Project | Domain | Status |
