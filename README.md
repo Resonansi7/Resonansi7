@@ -79,6 +79,28 @@ To run the full proactive orchestration (News Scan -> Policy Audit -> WA Alert):
    cd Resonansi7
    npm install
 
+---
+
+## 0x05: System Architecture & Causal Flow
+
+Resonansi7 operates on a **Linear-Causal Intelligence Loop**, bridging the gap between raw digital data and strategic policy intervention.
+
+```mermaid
+graph TD
+    A[External Signals / RSS Feeds] -->|Raw Data| B(RSS Fetcher)
+    B -->|Filtered Signals| C{News OSINT}
+    C -->|Keyword Pruning| D[Risk Scorer]
+    D -->|Impact Weighting| E{Causal Nexus}
+    E -->|Persistent Memory| F[(Blackout Resilience Core)]
+    F -->|Historical Linkage| E
+    E -->|Amplified Signal| G[BlindSpot Mapper]
+    G -->|Policy Gap Analysis| H[Narrative Engine]
+    H -->|Policy Brief| I[Intervention / WA Alert]
+    
+    style E fill:#f96,stroke:#333,stroke-width:2px
+    style G fill:#bbf,stroke:#333,stroke-width:2px
+    style I fill:#dfd,stroke:#333,stroke-width:2px
+
 See some example working PoC of Policy-as-Code:
 
 ## 🔗 Related Projects & Proofs-of-Concept
