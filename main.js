@@ -1,41 +1,39 @@
 /**
- * RESONANSI7 - Proactive Orchestration Core (POC)
- * Purpose: Integrating Causal Logic, OSINT, and Strategic Communication.
+ * Resonansi7 - Proactive Orchestration Core (POC)
+ * The main entry point to unify all sovereign AI modules.
  * Architect: Adiguna Sopyan, MPP
  */
 
-const arbiter = require('./core/causal_logic');
-const InfrastructureScanner = require('./adapters/gmaps_osint');
+const newsOSINT = require('./adapters/news_osint');
+const bsm = require('./core/blindspot_mapper');
 const waHarmonizer = require('./adapters/wa_bridge');
 
-async function runSovereignOrchestration() {
-    console.log("--- RESONANSI7 INITIATED ---");
-    
-    // 1. Definisikan Aksi Strategis
-    const action = {
-        dataOrigin: 'domestic_server',
-        processingNode: 'local_node', // Coba ubah ke 'external_cloud' untuk lihat penolakan
-        targetEndpoint: 'internal_audit'
-    };
+async function initiateSovereignCycle() {
+    console.log("=================================================");
+    console.log("   RESONANSI7 v1.0.5 - SOVEREIGN AI OPERATOR     ");
+    console.log("=================================================\n");
 
-    // 2. Filter melalui Policy Interpretation Layer (PIL)
-    if (!arbiter.isSovereignCompliant(action)) {
-        console.error("[ABORT] Action violates Sovereign AI Mandate.");
-        return;
+    // 1. SCAN PHASE
+    const newsSignals = await newsOSINT.scanGlobalNews();
+    console.log(`[ORCHESTRATOR] Found ${newsSignals.length} potential regulatory signals.`);
+
+    // 2. ANALYSIS PHASE (Looping through signals)
+    for (const news of newsSignals) {
+        if (news.relevance === "HIGH") {
+            console.log(`\n[ALERT] High-relevance news detected: "${news.title}"`);
+            
+            const analysis = bsm.analyzeRegulatoryGap({
+                domain: news.source,
+                impact: news.impactScore
+            });
+
+            // 3. ACTION PHASE
+            const finalReport = `[Resonansi7 POC] ALERT: ${news.title}. Impact Score: ${news.impactScore}. Action: Check BlindSpot Report.`;
+            await waHarmonizer.sendStrategicAlert("628123456789", finalReport);
+        }
     }
-    console.log("[COMPLIANT] Policy check passed. Proceeding to Intelligence Gathering.");
 
-    // 3. Eksekusi OSINT melalui Infrastructure Scanner
-    const scanner = new InfrastructureScanner({ apiKey: 'SIMULATION' });
-    const scanResult = await scanner.scanInfrastructure("-6.1754, 106.8272", "Logistics Hub");
-
-    // 4. Laporkan melalui Agentic Interface Harmonizer (AIH)
-    const report = `[RESONANSI7 ALERT]\nLocation: Monas Hub\nStatus: ${scanResult.status}\nAnomalies: None Detected.`;
-    const delivery = await waHarmonizer.sendStrategicAlert("628123456789", report);
-
-    if (delivery.sent) {
-        console.log(`[SUCCESS] Strategic Report Dispatched. Reference: ${delivery.ref_id}`);
-    }
+    console.log("\n[STATUS] Cycle Complete. Monitoring standing by...");
 }
 
-runSovereignOrchestration().catch(console.error);
+initiateSovereignCycle().catch(console.error);
