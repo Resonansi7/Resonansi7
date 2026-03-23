@@ -1,82 +1,59 @@
 /**
- * Resonansi7 - Advanced Crisis Simulation Suite
- * v1.5.0 - Multi-Cluster Stress Test (Digital, Logistics, Economy)
- * Purpose: Validating systemic risk detection across all national domains.
+ * Resonansi7 - Satori Engine
+ * Purpose: Predicting future systemic risks based on causal patterns.
  * Architect: Adiguna Sopyan, MPP
  */
 
-const bsm = require('../core/blindspot_mapper');
-const nexus = require('../core/causal_nexus');
-const narrativeEngine = require('../core/narrative_engine');
-const interventionLogic = require('../core/intervention_logic');
-
-const simulatedScenarios = [
-    // --- CLUSTER 1: DIGITAL SOVEREIGNTY ---
-    {
-        title: "Laporan gangguan teknis pada gateway server kementerian",
-        source: "Internal_Monitor",
-        impactScore: 5.5
-    },
-    {
-        title: "Deteksi akses ilegal (peretasan) pada database kependudukan nasional",
-        source: "Cyber_Security_Node",
-        impactScore: 7.5
-    },
-    
-    // --- CLUSTER 2: LOGISTICS CHAIN ---
-    {
-        title: "Penutupan sementara jalur distribusi tol lintas utama karena perbaikan",
-        source: "Logistics_Watch",
-        impactScore: 4.5
-    },
-    {
-        title: "Keterlambatan bongkar muat masif di pelabuhan strategis nasional",
-        source: "Maritime_Ops",
-        impactScore: 6.5
+class SatoriEngine {
+    constructor() {
+        this.confidenceThreshold = 0.75; // 75% Confidence
     }
-];
 
-async function runComprehensiveSimulation() {
-    console.log("=================================================");
-    console.log("   RESONANSI7 - SOVEREIGN STRESS TEST (V1.5)     ");
-    console.log("=================================================\n");
+    /**
+     * Memprediksi peluang eskalasi krisis.
+     * @param {Array} memory - Histori berita dari Nexus
+     */
+    predictEscalation(memory) {
+        if (memory.length < 2) return null;
 
-    for (const news of simulatedScenarios) {
-        console.log(`\n[INJECTING SIGNAL] "${news.title}"`);
+        const latest = memory[memory.length - 1];
+        const previous = memory[memory.length - 2];
+
+        // Hitung selisih waktu (Simulasi sederhana)
+        const intensity = latest.impactScore + previous.impactScore;
         
-        // Cek amplifikasi kausalitas dari memori (Persistent BRC)
-        const amplification = nexus.detectLink(news);
-        const finalScore = news.impactScore + amplification;
-        const isSystemicRisk = finalScore > 7.0;
+        // Rumus Probabilitas Sederhana: $P(E) = \frac{I}{20} \times \text{Linkage}$
+        const probability = (intensity / 20) * 1.2; 
+        
+        let forecast = {
+            probability: Math.min(probability, 1.0).toFixed(2),
+            timeframe: "12-24 Hours",
+            status: probability > 0.8 ? "CRITICAL PREDICTION" : "MONITORING"
+        };
 
-        if (isSystemicRisk) {
-            console.log(`[CAUSAL_DETECTED] Risk Amplified: +${amplification.toFixed(1)}`);
-            
-            const analysis = bsm.analyzeRegulatoryGap({
-                domain: news.title,
-                impact: finalScore
-            });
-
-            const sop = interventionLogic.getProcedures({
-                domain: news.title
-            });
-
-            const brief = narrativeEngine.generateBrief({
-                domain: news.source,
-                impact: finalScore,
-                recommendation: analysis.recommendation
-            });
-
-            console.log(brief);
-            console.log("STRATEGIC PROCEDURES (SOP) TRIGGERED:");
-            sop.forEach((step, i) => console.log(`${i+1}. ${step}`));
-            console.log("\n-------------------------------------------------");
-        } else {
-            console.log(`[STABLE] Score: ${finalScore.toFixed(1)} - Monitoring Standing By.`);
+        if (probability > this.confidenceThreshold) {
+            return forecast;
         }
+        return null;
     }
-    
-    console.log("\n[SIMULATION_COMPLETE] All clusters validated.");
 }
 
-runComprehensiveSimulation().catch(console.error);
+module.exports = new SatoriEngine();
+```
+
+---
+
+### Integrasi ke Pusat Kendali (`main.js`)
+
+Agar prediksi ini muncul di laporan, kita panggil Satori di dalam `main.js`:
+
+```javascript
+const satori = require('./core/satori_engine');
+
+// Di dalam loop, setelah mendapatkan amplification:
+const prediction = satori.predictEscalation(nexus.memory);
+
+if (prediction) {
+    console.log(`\n[SATORI PREDICTION] Escalation Probability: ${prediction.probability * 100}%`);
+    console.log(`[SATORI] Forecast Window: ${prediction.timeframe} | Status: ${prediction.status}`);
+}
